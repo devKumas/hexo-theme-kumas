@@ -1,0 +1,10 @@
+<header>
+  <%- image_tag('img/logo.png') %>
+  <p><%= config.description %></p>
+  <ol>
+    <% for (name in theme.menu) { %>
+    <li><a href="<%- url_for(theme.menu[name]) %>"><%= name %></a></li>
+    <% } %>
+  </ol>
+  <hr />
+</header>

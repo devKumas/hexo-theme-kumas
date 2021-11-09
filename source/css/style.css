@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+:root {
+  --main-width: 600px;
+  --content-width: 800px;
+}
+
+a {
+  color: #d2d2d2;
+  text-decoration: none;
+}
+.light-mode a {
+  color: #51525d;
+}
+
+a:focus,
+a:hover {
+  color: #ff6565;
+}
+body {
+  background-color: #2f3437;
+  color: #d2d2d2;
+  font-weight: 400;
+  font-size: 14px;
+  font-family: 'Menlo', 'Meslo LG', monospace;
+  line-height: 1.725;
+  text-rendering: geometricPrecision;
+}
+
+.light-mode {
+  background-color: #ffffff;
+  color: #51525d;
+}
+
+.light-mode .dark {
+  display: none;
+}
+
+.dark-mode .light {
+  display: none;
+}
+
+footer {
+  max-width: var(--content-width);
+  display: flex;
+  justify-content: space-between;
+  margin: 10px auto;
+  color: #ccc;
+}
+
+.light-mode footer {
+  color: #51525d;
+}
+
+footer .copyright a {
+  color: #ff6565;
+}
+
+footer .toggle {
+  font-size: 1.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+hr {
+  border-color: #58606b;
+}
+
+@media screen and (max-width: 800px) {
+  section {
+    width: 90%;
+    margin: auto;
+  }
+
+  footer {
+    width: 100%;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+}

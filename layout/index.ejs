@@ -1,0 +1,19 @@
+<%- css('css/index.css') %>
+<%- partial('_partial/header') %>
+<section>
+  <% site.categories.sort('name').map(function(category){ %>
+  <div class="title">
+    <p>
+      <i class="fas fa-paw"></i>
+      <%= category.name %>
+    </p>
+  </div>
+  <% category.posts.sort('date').reverse().map(function(post){ %>
+  <a href="<%- url_for(post.path) %>">
+    <div class="post">
+      <div><%= post.title %></div>
+      <div><%- full_date(post.date, 'MMMM Do') %></div>
+    </div>
+  </a>
+  <% }) %> <% }) %>
+</section>

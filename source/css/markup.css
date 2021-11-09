@@ -1,0 +1,150 @@
+section > article h1 {
+  font-size: 32px;
+  font-weight: 900;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #e06c75;
+}
+section > article h1,
+section > article h2 {
+  line-height: 40px;
+  margin: 20px 0 15px;
+}
+section > article h2 {
+  font-size: 25px;
+  border-left: 3px solid #ff9999;
+  padding-left: 10px;
+}
+section > article h3 {
+  font-size: 20px;
+  margin: 15px 0 10px;
+}
+section > article h4 {
+  font-size: 19px;
+  margin: 15px 0 10px;
+}
+section > article h5 {
+  font-size: 12px;
+  margin: 5px 0 0;
+}
+section > article a {
+  color: #e06c75;
+  text-decoration: none;
+}
+section > article a:hover {
+  border-bottom: 1px solid;
+}
+section > article h1 a:hover {
+  border-bottom: 0;
+}
+section > article code {
+  border-radius: 3px;
+}
+section > article code li {
+  list-style: none;
+}
+section > article img {
+  display: flex;
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  box-shadow: 0 0 3px #c3c3c3;
+  cursor: pointer;
+  margin: 0 auto;
+}
+section > article p {
+  margin-top: 6px;
+  line-height: 2em;
+  font-size: 0.95em;
+  letter-spacing: 0.8px;
+}
+section > article ol {
+  padding: 10px 30px;
+}
+section > article ol li {
+  margin-left: 15px;
+  padding: 7px;
+}
+section > article table {
+  width: 100%;
+  border: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
+  line-height: 1.2em;
+  border-radius: 8px;
+  box-shadow: 0 0 2px #d4d4d4;
+  word-wrap: break-word;
+  table-layout: fixed;
+  margin: 20px 0 15px;
+}
+section > article thead {
+  text-indent: 1em;
+}
+section > article thead tr {
+  height: 3em;
+}
+section > article table th {
+  background: #73b1e0;
+  font-weight: 800;
+  font-size: 18px;
+  text-align: left;
+  line-height: 35px;
+  color: #fff;
+}
+section > article tbody tr {
+  line-height: 2.5em;
+}
+section > article table tr:nth-child(odd) {
+  background: hsla(0, 0%, 96.5%, 0.51);
+}
+section > article table td:hover,
+section > article table tr:hover {
+  background: #e8e9ea;
+  cursor: pointer;
+}
+section > article table tr:first-child th:first-child {
+  border-top-left-radius: 3px;
+}
+section > article table tr:first-child th:last-child {
+  border-top-right-radius: 3px;
+}
+section > article table tr:last-child td:first-child {
+  border-bottom-left-radius: 3px;
+}
+section > article table tr:last-child td:last-child {
+  border-bottom-right-radius: 3px;
+}
+section > article ul {
+  margin: 5px 0;
+}
+section > article ul li {
+  list-style: none;
+  margin: 10px 16px;
+}
+section > article ul li:before {
+  content: '\2022';
+  color: #ff8888;
+  float: left;
+  margin-right: 10px;
+  line-height: 31px;
+  font-size: 18px;
+  font-weight: 500;
+}
+section > article blockquote {
+  background: #fafafa;
+  border-left: 5px solid #e0e2e5;
+  color: #aaa;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-weight: 400;
+  text-indent: 1em;
+  font-size: 1em;
+  padding: 10px;
+}
+section > article p code,
+section > article ul li code {
+  background: rgba(135, 131, 120, 0.15);
+  color: #f47466;
+  font-size: 1em;
+  margin: 0 3px;
+  padding: 3px 5px;
+}

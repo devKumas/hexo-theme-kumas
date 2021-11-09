@@ -1,0 +1,30 @@
+section {
+  width: var(--content-width);
+  height: 100%;
+  margin: auto;
+}
+
+section > div:first-child {
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+}
+
+section > div:first-child span {
+  font-size: 1.5em;
+}
+
+section > div:first-child i {
+  font-size: 2em;
+  margin-right: 0.8em;
+}
+
+@media screen and (max-width: 800px) {
+  section {
+    width: 90%;
+  }
+  section > div:first-child {
+    flex-direction: column;
+    font-size: 0.8em;
+  }
+}

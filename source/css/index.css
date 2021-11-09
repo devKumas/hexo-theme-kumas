@@ -1,0 +1,96 @@
+header {
+  width: 100%;
+  margin: 1em auto;
+  text-align: center;
+}
+
+header > p {
+  font-weight: bold;
+  font-size: 14px;
+  margin: 10px;
+  text-transform: uppercase;
+}
+
+header > img {
+  width: 150px;
+}
+
+header > ol {
+  margin-bottom: 20px;
+  list-style: none;
+  border-radius: 4px;
+}
+
+header > ol > li {
+  display: inline-block;
+}
+
+header > ol > li + li:before {
+  padding: 0 5px;
+  content: '&\00a0';
+}
+
+header > ol > .active {
+  color: #777;
+}
+
+header > ol {
+  padding: 8px 15px;
+  list-style: none;
+  background-color: initial;
+  border-radius: 0px;
+  text-align: center;
+}
+
+section {
+  width: var(--main-width);
+  height: 100%;
+  margin: auto;
+}
+
+section .title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 30px;
+}
+
+section .title i {
+  font-size: 24px;
+  color: #ff656550;
+}
+
+section .post {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 25px;
+  padding-right: 25px;
+  height: 30px;
+  cursor: pointer;
+}
+
+hr {
+  width: var(--main-width);
+  margin-top: -15px;
+  margin-bottom: -15px;
+}
+
+@media screen and (max-width: 800px) {
+  section {
+    width: 90%;
+    margin: auto;
+  }
+
+  section .post > div:first-child {
+    overflow:hidden; 
+    text-overflow:ellipsis; 
+    white-space:nowrap;
+  }
+
+  section .post > div:last-child {
+    display: none;
+  }
+
+  hr {
+    width: 90%;
+  }
+}

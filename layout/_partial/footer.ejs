@@ -1,0 +1,16 @@
+<footer>
+  <div class="copyright">
+    <p>Copyright © <%= new Date().getFullYear();%> <a href="https://hexo.io">Hexo</a> & <a href="https://github.com/hwansu-k/hexo-theme-kumas">Kumas</a></p>
+  </div>
+
+  <div class="toggle">
+    <a class="dark" onClick="themeToggle(false)">
+      <i class="fas fa-moon"></i>
+    </a>
+    <a class="light" onClick="themeToggle(true)">
+      <i class="fas fa-sun"></i>
+    </a>
+  </div>
+</footer>
+<input type="hidden" id="web_style" value="<%= theme.style %>" />
+<%- js('/js/js.js') %>

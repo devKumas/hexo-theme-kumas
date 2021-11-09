@@ -1,0 +1,13 @@
+logo_title: kumas.K
+
+style: black
+
+favicon: /favicon.svg
+
+menu:
+  Info: http://kumas.dev
+  Github: https://github.com/hwansu-k
+
+
+highlight:
+  enable: false
