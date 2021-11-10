@@ -1,6 +1,6 @@
 header {
   width: 100%;
-  margin: 1em auto;
+  margin-top: 2em;
   text-align: center;
 }
 
@@ -27,7 +27,8 @@ header > ol > li {
 
 header > ol > li + li:before {
   padding: 0 5px;
-  content: '&\00a0';
+  color:#777;
+  content: '|\00a0';
 }
 
 header > ol > .active {
@@ -54,9 +55,13 @@ section .title {
   margin-top: 30px;
 }
 
-section .title i {
-  font-size: 24px;
-  color: #ff656550;
+section .title strong {
+  font-size: 1.2em;
+  color: #ff6565;
+}
+
+section .title p {
+  margin-bottom: 0.5em;
 }
 
 section .post {
@@ -66,12 +71,6 @@ section .post {
   padding-right: 25px;
   height: 30px;
   cursor: pointer;
-}
-
-hr {
-  width: var(--main-width);
-  margin-top: -15px;
-  margin-bottom: -15px;
 }
 
 @media screen and (max-width: 800px) {
@@ -88,9 +87,5 @@ hr {
 
   section .post > div:last-child {
     display: none;
-  }
-
-  hr {
-    width: 90%;
   }
 }

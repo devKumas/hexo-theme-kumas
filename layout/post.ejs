@@ -2,9 +2,10 @@
 <%- css('css/markup.css') %>
 <%- css({id: 'prism-theme', href: 'css/prism/prism-one-light'}) %>
 <section>
-  <div>
-    <a href="/"><i class="fa fa-reply"></i></a>
-    <span><%= page.title %></span>
-  </div>
-  <article><%- page.content %></div>
+  <a href="/"><i class="fa fa-home history-btn"></i></a>
+  <article class="title">
+    <%= page.title %>
+  </article>
+  <hr>
+  <article class="content"><%- page.content %></div>
 </section>

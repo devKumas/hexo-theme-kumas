@@ -1,10 +1,11 @@
 <%- css('css/index.css') %>
 <%- partial('_partial/header') %>
 <section>
+  <hr />
   <% site.categories.sort('name').map(function(category){ %>
   <div class="title">
     <p>
-      <i class="fas fa-paw"></i>
+      <strong>#</strong>
       <%= category.name %>
     </p>
   </div>

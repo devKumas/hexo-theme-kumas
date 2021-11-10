@@ -4,27 +4,25 @@ section {
   margin: auto;
 }
 
-section > div:first-child {
-  display: flex;
-  align-items: center;
-  margin-top: 30px;
+section .title {
+  text-align: center;
+  font-size: 1.6em;
+  margin: 30px 0;
+  height: 40px;
 }
 
-section > div:first-child span {
-  font-size: 1.5em;
-}
-
-section > div:first-child i {
+section .history-btn {
+  position: absolute;
   font-size: 2em;
-  margin-right: 0.8em;
+  height: 40px;
+  line-height: 40px;
 }
 
 @media screen and (max-width: 800px) {
   section {
     width: 90%;
   }
-  section > div:first-child {
-    flex-direction: column;
-    font-size: 0.8em;
+  section .history-btn {
+    display: none;
   }
 }
